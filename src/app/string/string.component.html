@@ -1,0 +1,7 @@
+<main class="container">
+  <h1>Random String Generator</h1>
+  <p>a string will be generated automatically</p>
+  <div *ngIf="!string.includes('0')">
+    <p [ngClass]="{'string-red': isRed, 'string-blue': isBlue}">{{string}}</p>
+  </div>
+</main>
